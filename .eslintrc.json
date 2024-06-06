@@ -15,7 +15,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": "./react-vite-template/tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     },
