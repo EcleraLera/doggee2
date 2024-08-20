@@ -1,0 +1,122 @@
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: form;
+}
+
+.weight_postfix {
+  padding-top: 15px;
+  padding-left: 50px;
+  color: var(--error);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* .page {
+  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: '.form panel';
+  grid-column-gap: 3.57rem;
+  margin: 0 auto;
+  min-width: 78.57rem;
+  height: 100%;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: form;
+}
+
+.form_title {
+  color: var(--caret);
+font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.42rem;
+}
+
+.input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0,71rem;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0,71rem;
+  width: 100%;
+}
+
+.panel_container {
+  grid-area: panel;
+  background-color: var(--dark-orange);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel_header {
+font-family: var(--font-family);
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.86rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 15.93rem;
+  padding-top: 2.14rem;
+  width: 100%;
+  background-image: url('@/static/images/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 3,42rem;
+  color: var(--caret);
+  margin-bottom: 5.93rem;
+}
+
+.panel_have_account {
+font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.14rem;
+  color: var(--caret);
+  margin-bottom: 2.14rem;
+}
+
+.panel_rules {
+  width: 100%;
+  background-color: var(--white);
+  padding-left: 2.86rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0,71rem;
+}
+
+.password_correct_rule {
+  color: rgba(67, 116, 154, 0.772);
+}
+
+.password_uncorrect_rule {
+  color: rgb(219, 175, 0);
+} */

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["vite/client", "vite-plugin-svgr/client"],
@@ -13,16 +14,17 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@common/*": ["src/common/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
-  "include": ["src", "**/*.ts", "**/*.tsx", "."],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["src", "**/*.ts", "**/*.tsx", ".", "**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "extends": "./tsconfig.path.json"
 }

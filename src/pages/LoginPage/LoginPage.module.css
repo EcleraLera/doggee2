@@ -1,0 +1,91 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-pink);
+}
+
+.container {
+  width: 42.85rem;
+  height: 42.85rem;
+  border-radius: 2rem;
+  background: var(--pink);
+  box-shadow: 0 0.28rem 3.57rem 0.14rem var(--shaddow-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_container,
+.form_container {
+  width: 100%;
+  text-align: center;
+}
+
+.header_container {
+  color: var(--dark-pink);
+  border-radius: 2rem 2rem 0 0;
+  background-image: url('@/static/images/background.svg');
+  height: 10.71rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 2.86rem;
+  line-height: 3.42rem;
+  align-items: end;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2.14rem;
+  margin-bottom: 5.93rem;
+  z-index: 5;
+}
+
+.form_container {
+  padding: 0 8.93rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5.93rem;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.71rem;
+  width: 16.3rem;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.71rem;
+  width: 15.71rem;
+}
+
+.checkbox_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.71rem;
+  width: 15.71rem;
+}
+
+.sign_up_container {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.14rem;
+  color: var(--dark-orange);
+  margin-bottom: 1.07rem;
+}
+
+.buttonn {
+  z-index: 5;
+}

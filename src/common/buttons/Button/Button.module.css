@@ -1,0 +1,83 @@
+.button {
+  width: 100%;
+  height: 3.42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-orange);
+  border-radius: 0.35rem;
+  border: none;
+  color: var(--white);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--button-hover-bg);
+  box-shadow: 0 0.07rem 0.71rem 0.14rem var(--shaddow-pink);
+}
+.button:disabled {
+  background: var(--caret);
+  box-shadow: 0 0.07rem 0.71rem 0.14rem var(--shaddow-pink);
+}
+
+.button:active {
+  background: var(--button-action);
+
+  box-shadow: 0 0.07rem 0.71rem 0.14rem var(--button-action-shadow);
+}
+
+.button_loading {
+  position: relative;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 0.35rem;
+  background-color: var(--white);
+  color: var(--white);
+  animation: button_loading 0.5s infinite linear alternate;
+  animation-delay: 0.25s;
+}
+
+.button_loading::before,
+.button_loading::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.button_loading::before {
+  left: -0.71rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 0.35rem;
+  background-color: var(--white);
+  color: var(--white);
+  animation: button_loading 0.5s infinite alternate;
+  animation-delay: 0s;
+}
+
+.button_loading::after {
+  left: 0.71rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 0.35rem;
+  background-color: var(--white);
+  color: var(--white);
+  animation: button_loading 0.5s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+@keyframes button_loading {
+  0% {
+    background-color: var(--button-loading);
+  }
+  50%,
+  100% {
+    background-color: var(--white);
+  }
+}

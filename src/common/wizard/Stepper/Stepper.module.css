@@ -1,0 +1,61 @@
+.steps_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.step_index_container {
+  color: var(--dark-orange);
+  background: var(--dark-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 2.14rem;
+  height: 2.14rem;
+  border-radius: 1, 78rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.21rem;
+}
+
+.active_step_index_container {
+  background: var(--white);
+}
+
+.last_step_checkmark {
+  background-image: var(--image-checkmark);
+  width: 1rem;
+  height: 1rem;
+}
+
+.step_label_container {
+  color: var(--black);
+  position: absolute;
+  width: max-content;
+  font-size: 0.71rem;
+  bottom: -1.07rem;
+}
+
+.active_step_label_container {
+  font-weight: 600;
+}
+
+.step_separator {
+  background-color: var(--dark-pink);
+  width: 100%;
+  height: 0.07rem;
+  margin: 1.64rem 1.07rem 0;
+}
+
+.active_step_separator {
+  background-color: var(--dark-orange);
+  height: 0.14rem;
+}

@@ -1,0 +1,30 @@
+.pet_container {
+  min-width: 0;
+  width: 100%;
+  background: var(--button-action-shadow);
+  border-radius: 0.35rem;
+  padding: 0.64rem 0.71rem;
+  color: var(--black);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.selected_pet_container {
+  background: var(--dark-pink);
+}
+
+.cross {
+  width: 0.85rem;
+  height: 0.85rem;
+  background-size: 0.85rem;
+  background-image: var(--image-cross);
+}

@@ -1,0 +1,88 @@
+.pets_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.71rem 0;
+  padding: 2.85rem 1.42rem;
+  color: var(--black);
+}
+
+@media only screen and (max-width: 421px) {
+  .pets_container {
+    border: 0.07rem solid var(--dark-orange7);
+    border-radius: 0.35rem;
+    padding: 1.07rem 1.42rem;
+  }
+}
+
+.title {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.line {
+  height: 0.07rem;
+  background-color: var(--button-action-shadow);
+}
+
+@media only screen and (max-width: 421px) {
+  .line {
+    background-color: var(--dark-orange);
+  }
+}
+
+.add_pet {
+  font-weight: 400;
+  font-size: 0.85rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add_pet_icon {
+  width: 1.07rem;
+  height: 1rem;
+  background-size: 1.07rem 1rem;
+  background-image: var(--image-plus);
+}
+
+.pets_list_container {
+  display: flex;
+  flex-direction: column;
+  max-height: 200;
+  overflow-y: scroll;
+  gap: 0.71rem 0;
+}
+
+.pets_list_container::-webkit-scrollbar {
+  display: none;
+}
+
+.pet_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet_icon_container {
+  width: 1.28rem;
+  margin-right: 0.57rem;
+  display: inline-block;
+}
+
+.pet_correct_icon {
+  width: 1.21rem;
+  height: 0.93rem;
+  background-image: var(--image-checkmark);
+}
+
+.pet_uncorrect_icon {
+  width: 1.28rem;
+  height: 1.21rem;
+  background-image: var(--image-warning);
+}

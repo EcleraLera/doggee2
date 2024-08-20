@@ -1,0 +1,136 @@
+.select_icon {
+  cursor: pointer;
+  /* width: 1.35rem;
+  height: 1.35rem;
+  background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-color: #fff; */
+  width: 1.07rem;
+  height: 1rem;
+  background-size: 1.07rem 1rem;
+  background-image: var(--image-arrow);
+  transform: rotate(-90deg);
+}
+
+.options_container {
+  z-index: 99;
+  margin-top: 0.35rem;
+  position: absolute;
+  width: 100%;
+  border-radius: 0.35rem;
+  background-color: var(--button-action-shadow);
+}
+
+.option_container {
+  cursor: pointer;
+  padding: 0.6rem 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: inherit;
+  color: var(--error);
+}
+.option_container:hover {
+  background-color: var(--dark-pink);
+}
+.option_container:last-child {
+  border-radius: 0 0 0.35rem 0.35rem;
+}
+.option_container:first-child {
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+.option_container:only-child {
+  border-radius: 0.35rem;
+}
+.selected_option_container {
+  cursor: pointer;
+  padding: 0.6rem 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: inherit;
+  background-color: var(--dark-orange);
+  color: var(--black);
+}
+.selected_option_container:hover {
+  background-color: var(--dark-orange);
+}
+
+.focused_option_container {
+  background-color: var(--dark-pink);
+}
+
+.select_container {
+  border-radius: 0.35rem;
+  width: 100%;
+  /* background-color: #fff; */
+  position: relative;
+}
+
+.select_container[aria-disabled='true'] {
+  cursor: default;
+  background-color: var(--button-action-shadow);
+}
+
+.select_options_container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 9.37rem;
+  overflow-y: scroll;
+}
+.select_options_container::-webkit-scrollbar {
+  display: none;
+}
+
+.option_label {
+  position: absolute;
+  font-size: 0.85rem;
+  color: var(--black);
+}
+
+.hidden_option_label {
+  display: none;
+}
+
+.input_label {
+  user-select: none;
+  cursor: text;
+  position: absolute;
+  left: 1.07rem;
+  top: 1.07rem;
+  font-size: 1rem;
+  color: var(--dark-pink);
+  z-index: 1;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.input_container[aria-disabled='true'] .input_label {
+  cursor: default;
+}
+
+.translated_input_label {
+  transform: translate(-5%, -75%);
+  font-size: 0.71rem;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  font-size: 0.85rem;
+  color: var(--black);
+  background-color: transparent;
+}
+
+.input:active,
+.input:focus {
+  outline: none;
+  caret-color: var(--black);
+}
+
+.no_option_container {
+  padding: 6.35rem 1.42rem;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: inherit;
+  color: var(--error);
+  text-align: center;
+}

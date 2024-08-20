@@ -1,0 +1,11 @@
+.darkTheme {
+  --dark-orange: #f6caa8;
+  --dark-pink: #482020;
+  --background-input: #e8b995d4;
+  --pink: #f1647e;
+  --white: #c14d279f;
+  --error: #a31802;
+  --caret: #6a2424;
+  --button-action-shadow: rgb(134, 36, 51);
+  --button-loading: rgb(192, 121, 121);
+}

@@ -1,0 +1,19 @@
+.calendar_icon {
+  cursor: pointer;
+  width: 1.19rem;
+  height: 1.19rem;
+  background-size: 1.19rem 1.19rem;
+  background-image: var(--image-calendar);
+}
+
+.date_input_container {
+  width: 100%;
+  position: relative;
+}
+
+.calendar_container {
+  z-index: 99;
+  margin-top: 0.35rem;
+  position: absolute;
+  right: 0;
+}

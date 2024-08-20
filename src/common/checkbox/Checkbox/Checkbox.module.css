@@ -1,0 +1,28 @@
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0 0.35rem;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox input {
+  margin-right: 0.57rem;
+  height: 1.42rem;
+  width: 1.42rem;
+}
+
+.checkbox input:hover {
+  margin-right: 0.57rem;
+  box-shadow: 0 0.21rem 0.35rem 0.14rem var(--button-action);
+}
